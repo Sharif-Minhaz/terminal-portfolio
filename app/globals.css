@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thumb-gray-600::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 0.25rem;
+}
+
+.scrollbar-track-gray-800::-webkit-scrollbar-track {
+  background-color: #1f2937;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Terminal cursor animation */
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink::after {
+  content: "█";
+  animation: blink 1s infinite;
+}
+
+/* Prevent text selection on terminal elements */
+.terminal-output {
+  user-select: text;
+}
+
+/* Custom focus styles for better accessibility */
+input:focus {
+  outline: none;
+}
+
+/* Ensure proper font rendering */
+.font-mono {
+  font-family: "Courier New", Courier, monospace;
+  font-variant-ligatures: none;
+}
