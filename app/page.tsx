@@ -87,7 +87,7 @@ export default function TerminalPortfolio() {
 			"Contact Information:",
 			"",
 			"📧 Email: smmr.career@gmail.com",
-			"💼 LinkedIn: linkedin.com/in/minhaz-sharif-614724205/",
+			"💼 LinkedIn: linkedin.com/in/minhaz-sharif-614724205",
 			"🐙 GitHub: github.com/sharif-minhaz",
 			"🌐 Website: dev-sharif-md-minhaz.netlify.app",
 			"📱 Phone: +880 (130) 867-3831",
